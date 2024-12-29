@@ -26,11 +26,11 @@ const CopyButton = ({ content }) => {
   return (
     <button
       onClick={handleCopy}
-      className="group absolute top-4 right-4 inline-flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 bg-white hover:bg-gray-100 dark:bg-gray-950 dark:hover:bg-gray-900 rounded-md border border-gray-200 dark:border-gray-800 transition-all leading-none"
+      className="group fixed top-4 right-4 md:absolute flex flex-col items-center gap-1 px-3 py-2 text-sm text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 bg-white hover:bg-gray-100 dark:bg-gray-950 dark:hover:bg-gray-900 rounded-md border border-gray-200 dark:border-gray-800 transition-all leading-none"
     >
       <svg 
-        width="14" 
-        height="14" 
+        width="16" 
+        height="16" 
         viewBox="0 0 24 24" 
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ const CopyButton = ({ content }) => {
           strokeLinejoin="round"
         />
       </svg>
-      <span>{copied ? 'Copied!' : 'Copy page'}</span>
+      <span className="text-[11px]">{copied ? 'Copied!' : 'Copy'}</span>
     </button>
   );
 };
