@@ -26,7 +26,7 @@ const CopyButton = ({ content }) => {
   return (
     <button
       onClick={handleCopy}
-      className="group absolute top-4 right-4 inline-flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 bg-white hover:bg-gray-100 dark:bg-gray-950 dark:hover:bg-gray-900 rounded-md border border-gray-200 dark:border-gray-800 transition-all"
+      className="group absolute top-4 right-4 inline-flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 bg-white hover:bg-gray-100 dark:bg-gray-950 dark:hover:bg-gray-900 rounded-md border border-gray-200 dark:border-gray-800 transition-all leading-none"
     >
       <svg 
         width="14" 
@@ -34,7 +34,7 @@ const CopyButton = ({ content }) => {
         viewBox="0 0 24 24" 
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
-        className="text-gray-500 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-gray-100"
+        className="text-gray-500 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-gray-100 relative top-[0.5px]"
       >
         <path 
           d="M16 12.9V17.1C16 20.6 14.6 22 11.1 22H6.9C3.4 22 2 20.6 2 17.1V12.9C2 9.4 3.4 8 6.9 8H11.1C14.6 8 16 9.4 16 12.9Z" 
@@ -51,7 +51,7 @@ const CopyButton = ({ content }) => {
           strokeLinejoin="round"
         />
       </svg>
-      <span className="relative top-[1px]">{copied ? 'Copied!' : 'Copy page'}</span>
+      <span className="inline-block">{copied ? 'Copied!' : 'Copy page'}</span>
     </button>
   );
 };
