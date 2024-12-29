@@ -1,13 +1,28 @@
-# Introduction
+---
+title: Your Page Title
+---
 
-TEST CHANGE 3
+import { useRef } from 'react'
+import CopyButton from '../components/CopyButton'
 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+export function PageWithCopy({ children }) {
+  const contentRef = useRef(null)
+  return (
+    <div ref={contentRef}>
+      {children}
+      <CopyButton contentRef={contentRef} />
+    </div>
+  )
+}
 
-## What is Nextra?
+<PageWithCopy>
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+# Your Content Here
 
-## Documentation
+Welcome to this page! This content will be copyable.
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+## Some Section
+
+More content here...
+
+</PageWithCopy>
