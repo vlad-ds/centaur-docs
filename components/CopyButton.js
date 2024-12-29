@@ -6,7 +6,7 @@ const CopyButton = ({ content }) => {
   const handleCopy = async () => {
     try {
       // Debug: Log what elements we find
-      const elements = document.querySelectorAll('*');
+      const elements = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p');
       console.log('Found elements:', elements);
 
       // Debug: Log each element and its content
