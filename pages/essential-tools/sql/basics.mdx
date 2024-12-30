@@ -1,0 +1,35 @@
+# SQL Basics for Data Engineering
+
+SQL is the foundation of data engineering. This guide focuses on BigQuery SQL, but the concepts apply broadly.
+
+## Core Concepts
+
+### Basic Queries
+```sql
+SELECT 
+  column1,
+  column2,
+  COUNT(*) as count
+FROM `project.dataset.table`
+WHERE column1 = 'value'
+GROUP BY 1, 2
+```
+
+### Joins
+
+```sql
+SELECT 
+  t1.column1,
+  t2.column2
+FROM `project.dataset.table1` t1
+JOIN `project.dataset.table2` t2
+ON t1.column1 = t2.column1
+```
+
+### Window Functions
+
+### Common Table Expressions (CTEs)
+
+### Subqueries
+
+### Data Types and Constraints
