@@ -1,9 +1,12 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": {
-    "title": "Advanced (A Folder 2)",
-    "description": "This is a description for the Advanced page."
+  "essential-tools": {
+    "title": "Essential Tools",
+    "description": "This is a description for the Essential Tools page."
+  },
+  "fundamentals": {
+    "title": "Fundamentals",
+    "description": "This is a description for the Fundamentals page."
   },
   "about": {
     "title": "About",
